@@ -3,3 +3,13 @@
 ################################################################################
 
 /.vs/DesignMode/v16
+/.vs
+/Memento/.vs
+/Memento/bin/Debug/netcoreapp2.2
+/Memento/obj
+/MementoExt/bin/Debug/netcoreapp2.2
+/MementoExt/obj
+/Strategy/bin/Debug/netcoreapp2.2
+/Strategy/obj
+/UnitOfWork/bin/Debug/netcoreapp2.2
+/UnitOfWork/obj
