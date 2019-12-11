@@ -2,6 +2,7 @@
 
 namespace Strategy
 {
+    #region 策略上下文
     /// <summary>
     /// 策略接口
     /// </summary>
@@ -31,6 +32,9 @@ namespace Strategy
         }
     }
 
+    /// <summary>
+    /// 优惠类
+    /// </summary>
     public class Activities
     {
         /// <summary>
@@ -38,7 +42,12 @@ namespace Strategy
         /// </summary>
         public double Discount { get; set; }
     }
+    #endregion
 
+    #region 具体实现策略类
+    /// <summary>
+    /// 双十一优惠
+    /// </summary>
     public class DoubleElevenActivities : IActivitiesStrategy
     {
         public double GetDiscountStrategy()
@@ -47,13 +56,17 @@ namespace Strategy
         }
     }
 
+    /// <summary>
+    /// 双十二优惠
+    /// </summary>
     public class DoubleTwelveActivities : IActivitiesStrategy
     {
         public double GetDiscountStrategy()
         {
             return 0.12;
         }
-    }
+    } 
+    #endregion
 
     class Program
     {

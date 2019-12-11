@@ -13,3 +13,6 @@
 /Strategy/obj
 /UnitOfWork/bin/Debug/netcoreapp2.2
 /UnitOfWork/obj
+/Adapter/obj
+/Bridge/bin/Debug/netcoreapp2.2
+/Bridge/obj

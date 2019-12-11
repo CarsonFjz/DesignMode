@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace UnitOfWork
 {
+    /// <summary>
+    /// 数据实体
+    /// </summary>
     public class Model
     {
         public static Model CreateNew(string myKey)
@@ -16,6 +19,9 @@ namespace UnitOfWork
         }
         public string Key { get; set; }
     }
+    /// <summary>
+    /// 仓储类
+    /// </summary>
     public class Repository
     {
         public string Add(Model model)
@@ -36,7 +42,9 @@ namespace UnitOfWork
             return "delete command";
         }
     }
-
+    /// <summary>
+    /// 工作单元
+    /// </summary>
     public class UnitOfWork
     {
         public List<Func<string, string>> Commands { get; set; } = new List<Func<string, string>>();
