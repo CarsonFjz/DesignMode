@@ -16,3 +16,5 @@
 /Adapter/obj
 /Bridge/bin/Debug/netcoreapp2.2
 /Bridge/obj
+/Observer/bin/Debug/netcoreapp3.1
+/Observer/obj
